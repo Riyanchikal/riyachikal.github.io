@@ -1,0 +1,56 @@
+<html>
+    <title>TUGAS 13</title>
+    <meta name="viewport" content="width", initial-scale="1">
+    <link rel="stylesheet" href=w3.css>
+    <body>
+        
+        <div class=" w3-container w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="opennegara('Indonesia')">Indoneisa</button>
+            <button class="w3-bar-item w3-button" onclick="opennegara('Malaysia')">Malaysia</button>
+            <button class="w3-bar-item w3-button" onclick="opennegara('Jepang')">Jepang</button>
+            <button class="w3-bar-item w3-button" onclick="opennegara('Korea')">Korea Selatan</button>
+        </div>
+        <div id="Indonesia" class="w3-container Negara w3-black w3-animate-fading" style="display:none">
+            <h2>Indonesia</h2>
+            <img src="indonesia.png">
+            <p>
+                Indoneisa dikenal dengan nama resmi republik Indonesia adaah negara kepulauan
+                di asia tenggara yang dilintasi garis khatulistiwa.
+            </p>
+        </div>
+        <div id="Malaysia" class="w3-container negara w3-black w3-animate-bottom" style="display:none">
+            <h2>Malaysia</h2>
+            <img src="malaysia.png">
+            <p>
+                Malaysia adalah sebuah negara di asia tenggara. Monarki konstitual federal terdiri
+                dari tiga belas negara bagian dan tiga wilayah fedaral.
+            </p>
+        </div>
+        <div id="Jepang" class="w3-container negara w3-black w3-animate-top" style="display:none">
+            <h2>Jepang</h2>
+            <img src="jepang.png">
+            <p>
+               Jepang adalah sebuah negera kesatuan yang bersistem perlementer dengan berbentuk
+               monarki konstitual dan juga negara kepulauan di asia timur. 
+            </p>
+        </div>
+        <div id="Korea" class="w3-container negara w3-black w3-animate-zoom" style="display:none">
+            <h2>korea Selatan</h2>
+            <img src="korsel.png">
+            <p>
+               Korea adalah sebuah wiliyah semenanjung di asia timur. Sejak 1945, ia terbagi pada 
+                garis paralel ke-38, dengan korean utara.
+            </p>
+        </div>
+        <script>
+            function opennegara(namanegara) {
+                var i;
+                var x=document.getElementsByClassName("negara");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                }
+                document.getElementById(namanegara).style.display = "block";
+                }
+        </script>
+    </body>
+</html>
